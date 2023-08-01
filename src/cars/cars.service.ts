@@ -2,28 +2,18 @@ import { BadRequestException, Injectable, NotFoundException } from '@nestjs/comm
 import { v4 as uuid } from 'uuid';
 
 import { Car } from './interfaces';
-import { CreateCarDto, UpdateCarDto } from './dtos';
+import { CreateCarDto, UpdateCarDto } from './dto';
 
 
 @Injectable()
 export class CarsService {
 
   private cars: Car[] = [
-    {
-      id: uuid(),
-      brand: 'Toyota',
-      model: 'Corolla'
-    },
-    {
-      id: uuid(),
-      brand: 'Honda',
-      model: 'Civic'
-    },
-    {
-      id: uuid(),
-      brand: 'Jeep',
-      model: 'Cherokee'
-    }
+    // {
+    //   id: uuid(),
+    //   brand: 'Toyota',
+    //   model: 'Corolla'
+    // }
   ];
 
 

@@ -4,7 +4,7 @@ import {
 } from '@nestjs/common';
 
 import { CarsService } from './cars.service';
-import { CreateCarDto, UpdateCarDto } from './dtos';
+import { CreateCarDto, UpdateCarDto } from './dto';
 
 
 @Controller('cars')
